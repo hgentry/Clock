@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<script src = "test.js" ></script>
+<script src = "alarm.js" ></script>
+
+<font size = "120">
+
+
+<button type = "button" onclick = "setmode(0)">Countdown</button>
+<button type = "button" onclick = "setmode(1)">Stopwatch</button>
+<button type = "button" onclick = "setmode(2)">Realtime</button>
+<button type = "button" onclick = "setmode(3)">Alarm Set</button>
+<br>
+
+<table>
+<tr>
+<td id="hr10" align="center"><img src = "0.png" /></td>
+<td id="hr01" align="center"><img src = "0.png" /></td>
+<td>:</td>
+<td id="mn10" align="center"><img src = "0.png" /></td>
+<td id="mn01" align="center"><img src = "0.png" /></td>
+<td>:</td>
+<td id="sc10" align="center"><img src = "0.png" /></td>
+<td id="sc01" align="center"><img src = "0.png" /></td>
+<td id="ampm" align="center"></td>
+</tr>
+
+<tr>
+<td align="right"><button type = "button" onclick = "hrup()">+</button></td>
+<td align="left"><button type = "button" onclick = "hrdn()">-</button></td>
+<td align="center"></td>
+<td align="right"><button type = "button" onclick = "mnup()">+</button></td>
+<td align="left"><button type = "button" onclick = "mndn()">-</button></td>
+<td align="center"></td>
+<td align="right"><button type = "button" onclick = "scup()">+</button></td>
+<td align="left"><button type = "button" onclick = "scdn()">-</button></td>
+</tr>
+
+</table>
+</font>
+
+<br>
+<button type = "button" onclick = "begintime()">Start</button>
+<button type = "button" onclick = "stoptime()">Stop</button>
+<button type = "button" onclick = "cleartime()">Clear</button>
+<button type = "button" onclick = "setalarm()">Set</button>
+<button type = "button" onclick = "setampm()">12/24</button>
+<button type = "button" onclick = "stopalarm()">Stop Alarm</button>
+<br>
+<p id = "alarmlist" />
+</html>
